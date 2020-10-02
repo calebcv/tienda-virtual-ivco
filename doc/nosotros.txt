@@ -1,0 +1,17 @@
+h1(ivco shop)
+p
+BIENVENIDO A MEGASHOP.COM.PE, TU NUEVO DESTINO DE COMPRAS EN LÍNEA. TE OFRECEMOS UNA SELECCIÓN DE ARTÍCULOS DE LAS MEJORES MARCAS EN TECNOLOGÍA, AL MEJOR PRECIO, HASTA LA PUERTA DE TU CASA.
+Por favor, vuelve con frecuencia para enterarte de los nuevos productos, ya que estamos en constante expansión. Estén atentos para conocer las nuevas categorías de todos los productos interesantes que serán agregados. Pueden seguirnos en Facebook para estar al día con las últimas tendencias, ofertas y noticias MEGASHOP.
+Con Sede Principal en Chiclayo, contamos con almacén en las distintas categorías de productos. Nuestra empresa cuenta con un equipo de profesionales que los asesorará en su proceso de COMPRA, para que puedan adquirir un producto que esté acorde a su necesidad y presupuesto; los mismos que se encargarán de brindarles un servicio POSVENTA con toda la amabilidad y atención que ustedes se merecen, garantizando su plena satisfacción en su compra ONLINE.
+\p
+
+
+h2(Les ofrecemos verdaderas soluciones)
+
+	imagen1			imagen 2
+
+h2(Nuestra Misión)
+Llevar Tecnología útil a tu medida, con el fin de brindarte una grata experiencia de compra, con asesoría, respaldo y responsabilidad en cada proceso. Todo esto, con un solo Click, en donde te encuentres.
+
+h2(Nuestra Visión)
+Somos una empresa Peruana, y tenemos como valores, la honestidad, la responsabilidad y el trabajo en equipo. Pilares fundamentales que nos permiten seguir creciendo, para poder brindarte un servico ONLINE SHOPPING, de manera responsable.

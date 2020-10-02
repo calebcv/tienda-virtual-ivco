@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+/***** General *****/
+
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/***** Title *****/
+
+#title {
+	margin-top: 2.5em;
+	margin-bottom: 2em;
+}
+
+h1 {
+	color: #90D51B;
+	text-align: center;
+}
+
+/***** Search *****/
+
+#search-box {
+	border-style: solid;
+	border-width: 3px;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	height: 24px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 300px;
+	text-align: center;
+	width: 50%;
+}
+
+/***** Directory *****/
+
+li {
+	display: inline-block;
+	height: 150px;
+	list-style: none;
+	margin-bottom: 2em;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 10px;
+	width: 45%;
+}
+
+li img {
+	display: block;
+	float: left;
+	height: 100%;
+}
+
+.name {
+	color: #0085DD;
+	font-weight: 700;
+}

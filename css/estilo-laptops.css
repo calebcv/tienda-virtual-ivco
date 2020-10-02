@@ -1,0 +1,313 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+body{
+    background-image: url(../img/fondobody2.jpg);
+}
+#contenedor{
+    width: 95%;
+    max-width: 2000px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+/*------------ESTILOS LOGO-MENSAJE-CELEBRACIÓN--------------*/
+.logo-mensaje{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}    
+#peru img{
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 188px;
+    
+}
+#logo img{
+   width: 40%;
+   object-fit: cover;
+   margin-top: 5px;
+}
+#mensaje img{
+    width: 80%;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+/*------------------------------------------------------------*/
+header{
+    width: 100%;
+    background-image: url(../img/fondoBanner4.jpg);
+}
+/*ATRIBUTOS IMÁGENES HEADER*/
+.sliderheader{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden ; /*junta las fotos uno encima del otro*/
+}
+.sliderheader ul{
+    display: flex;
+    animation: cambio 7s infinite alternate;
+}
+.sliderheader li{
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+}
+.sliderheader img{
+    width: 1100px;
+    height: 290px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    10%{margin-left: 0;}
+
+    25%{margin-left: -140%;}
+    50%{margin-left: -110%;}
+    
+    55%{margin-left: -130%;}
+    65%{margin-left: -180%;}
+
+    70%{margin-left: -210%;}
+    100%{margin-left: -212%;}
+}
+/*ESTILOS DEL NAV*/
+.nav{
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*ESTILO DE TODO EL MENÚ*/
+.nav ul{
+    list-style: none;/*quitamos las viñetas*/
+    padding: 0px;
+}
+/*DÁNDOLE ESTILOS AL MENÚ*/
+.men li{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    background-color:#61BD0D;
+    border-radius: 1px;
+}
+.men li a{
+    display:block;
+    width: 140px;
+    padding: 11px 23px;
+    color: #fff;
+    background-color: #229954 e;
+    text-align: center;
+    text-decoration: none;/*quitamos el subrayado*/
+}
+/*ANIMACIÓN AL PASAR CURSOR*/
+.men li a:hover{
+    color:black;
+    background-color: rgba(236, 240, 241, 0.651);
+    border-radius: 3px;
+    transition: all 4s;
+}
+/*ESTILO BOTON SUBMENU*/
+.submen{
+    position: absolute;/*se posiciona el submenu en la opción y se desplaza hacia abajo*/
+    visibility: hidden;/*recoge el submenu y se aloja en la opcion de menu*/
+    opacity: 0;
+    transition: opacity 5s;
+    border: 2px solid white;
+}
+/*ESTILO TEXTO-FONDO SUBMENU*/
+.submen li{
+   font-size: 12.5px;
+   border-bottom-color: 2px
+}
+.submen li a{
+    width: 159px;
+    margin: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color:#fff;
+    text-align: left;
+}
+.submen li a:hover{
+    color:black;
+    background-color: rgba(236, 240, 241, 0.651);
+    border-radius: 3px;
+}
+.men li:hover .submen{
+    visibility: visible;
+    opacity: 2;
+}
+/*-----------ESTILO FORMULARIO----------------*/
+.formulario{
+    width: 100%;
+    margin-left: 981px;
+    margin-right: 65px;
+}
+select{
+    color:#0E5264;
+    padding: 5px;
+    border: 1px solid rgb(163, 194, 194);
+}
+/*---------------------------------------------*/
+main{
+    display: flex;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+section figure img{
+    width: 210px;
+    height: 170px;
+    border: 1px solid rgb(212, 211, 211);
+    border-radius: 5px;
+    margin: 40px 40px 5px 40px;
+}
+section figure figcaption{
+    text-align: center;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+#figcaptionvalor{
+    color:#61BD0D;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#figcaptionvalor:hover{
+    color: rgb(43, 80, 80);
+}
+.boton{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(45, 53, 68);
+    border-radius: 5px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.boton:hover{
+    color:yellow;
+    transition: all 2s;
+}
+
+footer{
+    display: flex;
+    margin-top: 5px; 
+    background-color: rgb(45, 53, 68);
+}
+.footer1{
+    padding-top:30px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.footer1 h1{
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #61BD0D;
+}
+.footer1 h2{
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+.footer1 h3{
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+.footer1 img{
+    float: left;
+    padding-right: 10px;
+    width: 30px;
+}
+.footer1 p{
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: arial narrow;
+    color: white;
+}
+.footer1 p a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial narrow;
+    color: white;
+}
+.footer1 p a:hover{
+    color: rgb(221, 221, 32);
+    transition: all 2s;
+}
+.footer2{
+    padding-top: 30px;
+    padding-left: 250px;
+    padding-bottom: 10px;
+}
+.footer2 h2{
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #61BD0D;
+    font-weight: bold;
+    font-style: italic;
+}
+.footer2 ul{
+    padding-left: 13px;
+    color: white;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.footer2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer2 ul li a:hover{
+    color: rgb(221, 221, 32);
+    transition: all 2s;
+}
+
+.footer2 span{
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer3{
+    padding-top: 30px;
+    padding-left: 250px;
+    padding-bottom: 10px;
+}
+.footer3 h2{
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #61BD0D;
+    font-weight: bold;
+    font-style: italic;
+}
+.footer3 h3{
+    color: white;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer3 img{
+    display: flex;
+    width: 180px;
+    margin-top: 20px;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda Virtual Ivco</title>
+        <link rel="stylesheet" href="../css/estilo-libroreclamaciones.css">
+    </head>
+      <body>
+        <div id="contenedor">
+          <header>
+            <center>
+              <h1>Libro de Reclamaciones</h1>
+              <p>Aquí podrá presentar formalmente cualquier reclamo que tengas. Nosotros nos encargaremos de resolver tu caso de la menor manera y en el menor tiempo posible.
+                No olvides leer las instrucciones del proceso <a href="../img/instruccionesLibroReclamaciones.PNG"data-lightbox="grupo">Aquí.</a>
+                </p>
+            </center>
+          </header>
+          <main>
+              <center>
+            <section>
+              <h1>Para poder ayudarte, por favor, bríndanos tus datos personales</h1>
+              <form action="" class="formulario">
+                <label for="" class="datos">Tipo de Documento</label>
+                <select name="Tipo de Documento" class="caja">
+                    <option>DNI</option>
+                    <option>Pasaporte</option>
+                    <option>Carnet de Extranjería</option>
+                </select><br>
+                <label for="" class="datos">Nro. de Documento</label>
+                <input type="text" class="caja" placeholder="Escribe tu número de documento...."required>
+                <br>
+                <label for="" class="datos">Nombres</label>
+                <input type="text" class="caja" placeholder="Nombres completos" required>
+                <br>
+                <label for="" class="datos">Apellido Paterno</label>
+                <input type="text" class="caja" placeholder="Apellido Paterno" required>
+                <br>
+                <label for="" class="datos">Apellido Materno</label>
+                <input type="text" class="caja" placeholder="Apellido Materno" required>
+                <br>
+               <h2>¿A dónde prefirirías recibir nuestra empresa?</h2> 
+                <select name="Lugar" class="caja" style="margin-left: 20px;">
+                    <option>A mi casa</option>
+                    <option>A mi correo E-mail</option>
+                </select><br> 
+                <label for="" class="datos">Departamento</label>
+                <select name="Departamento" class="caja">
+                    <option>Lima</option>
+                    <option>Ancash</option>
+                    <option>Huánuco</option>
+                </select><br>
+                <label for="" class="datos">Provincia</label>
+                <select name="Provincia" class="caja">
+                    <option>Lima</option>
+                    <option>Huaraz</option>
+                    <option>Leoncio Prado</option>
+                </select><br>
+                <label for="" class="datos">Distrito</label>
+                <select name="Distrito" class="caja">
+                    <option>San Martin de Porres</option>
+                    <option>Cochabamba</option>
+                    <option>José Crespo y Castillo</option>
+                </select><br>
+                <label for="" class="datos">Ingrese dirección</label>
+                <input type="text" class="caja" placeholder="Dirección del domicilio" required>
+                <br>
+                <label for="" class="datos">Teléfono</label>
+                <input type="text" class="caja" placeholder="Número de teléfono" required>
+                <br>
+                <label for="" class="datos">Correo</label>
+                <input type="text" class="caja" placeholder="E-mail" required>
+                <br><br>
+                <label for="" class="datos">Menor de edad</label>
+                <input  type="checkbox" value="Si"required>Si</input>
+                <input type="checkbox" value="No"required>No</input>
+                <br>
+                <h2>Información general del caso</h2>
+                <label for="" class="datos">Nombre del producto</label>
+                <input type="text" class="caja" placeholder="Nombre del producto" required>
+                <br>
+                <label for="" class="datos">Fecha de incidente</label>
+                <input type="date" id="fecha" name="fecha" class="caja"><br>
+                <label for="" class="datos">Lugar</label>
+                <input type="text" class="caja" placeholder="Lugar" required>
+                <br>
+                <label for="" class="datos">Monto de reclamo S/.</label>
+                <input type="text" class="caja" placeholder="S/." required>
+                <br>
+                <label for="" class="datos">Lugar donde adquirió el producto</label>
+                <input type="text" class="caja" placeholder="Lugar donde adquirió el producto" required>
+                <br>
+                <h3>Cuéntenos su incidente</h3>
+                <h4>Detalle de su incidente</h4>
+                <input type="radio" value="Reclamo" style="margin-left: 20px;"> Reclamo</input>
+                <input type="radio" value="Queja" style="margin-left: 20px;"> Queja</input>
+                <br>
+                <textarea name="" cols="72" rows="5" placeholder="Detalle su incidente" class="textA"></textarea></p>
+                <input type="submit" value="Enviar Datos" class="boton">
+
+              </form>
+            </section>
+            </center>
+          </main>
+          <footer>
+            <div class="footer1">
+              <h1>ONLINESHOPIVCO.COM.PE</h1>
+              <h2>Tienda Online:</h2>
+              <h3>ATENCIÓN 24 HORAS ONLINE .:</h3><br><br>
+              <img src="../img/logofacebook.png" alt="">
+              <p>Síguenos</p><br>
+              <img src="../img/logoWhatsapp.png" alt="">
+              <p><a href="https://api.whatsapp.com/send?phone=01953659803" target="_blank">953659803</a></p>
+            </div>
+            <div class="footer2">
+              <h2>Contenido:</h2>
+              <ul>
+                <li><a href="../index.html">Portada</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="FormasPago.html">Formas de Pago</a></li>
+                <li><a href="LaEmpresa.html">La Empresa</a></li>
+                <li><a href="Contactenos.html">Contáctenos</a></li>
+                <li><a href="Login.html">Ingresar / Registrarse</a></li>
+                <li><a href="mapaSitio.html">Mapa de Sitio</a></li>
+              </ul>
+              <br><br><br><br>
+              <span>Copyright 2020 por @ivco</span>
+            </div>
+            <div class="footer3">
+              <h2>Teléfono:</h2>
+              <h3>953659803</h3><br>
+              <h2>Correo electrónico:</h2>
+              <h3>ventas@onlineshopivco@gmail.com</h3>
+              <h3>soporte@onlineshopivco@gmail.com</h3>
+              <center>
+                <a title="Libro de Reclamaciones" href="libroReclamaciones.html"><img src="../img/libroReclamaciones.png" alt="Libro de Reclamaciones" /></a>
+              </center>
+            </div>
+          </footer>
+        </div>
+      </body>
+</html>

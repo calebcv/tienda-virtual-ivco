@@ -1,0 +1,360 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+body{
+    background-image: url(../img/fondobody2.jpg);
+}
+#contenedor{
+    width: 95%;
+    max-width: 2000px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+/*------------ESTILOS LOGO-MENSAJE-CELEBRACIÓN--------------*/
+.logo-mensaje{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}    
+#peru img{
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 188px;
+    
+}
+#logo img{
+   width: 40%;
+   object-fit: cover;
+   margin-top: 5px;
+}
+#mensaje img{
+    width: 80%;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+/*------------------------------------------------------------*/
+header{
+    width: 100%;
+    background-image: url(../img/fondoBanner4.jpg);
+}
+/*ATRIBUTOS IMÁGENES HEADER*/
+.sliderheader{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden ; /*junta las fotos uno encima del otro*/
+}
+.sliderheader ul{
+    display: flex;
+    animation: cambio 7s infinite alternate;
+}
+.sliderheader li{
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+}
+.sliderheader img{
+    width: 1100px;
+    height: 290px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    10%{margin-left: 0;}
+
+    25%{margin-left: -140%;}
+    50%{margin-left: -110%;}
+    
+    55%{margin-left: -130%;}
+    65%{margin-left: -180%;}
+
+    70%{margin-left: -210%;}
+    100%{margin-left: -212%;}
+}
+/*ESTILOS DEL NAV*/
+.nav{
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*ESTILO DE TODO EL MENÚ*/
+.nav ul{
+    list-style: none;/*quitamos las viñetas*/
+    padding: 0px;
+}
+/*DÁNDOLE ESTILOS AL MENÚ*/
+.men li{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    background-color:#61BD0D;
+    border-radius: 1px;
+}
+.men li a{
+    display:block;
+    width: 140px;
+    padding: 11px 23px;
+    color: #fff;
+    background-color: #229954 e;
+    text-align: center;
+    text-decoration: none;/*quitamos el subrayado*/
+}
+/*ANIMACIÓN AL PASAR CURSOR*/
+.men li a:hover{
+    color:black;
+    background-color: rgba(236, 240, 241, 0.651);
+    border-radius: 3px;
+    transition: all 4s;
+}
+/*ESTILO BOTON SUBMENU*/
+.submen{
+    position: absolute;/*se posiciona el submenu en la opción y se desplaza hacia abajo*/
+    visibility: hidden;/*recoge el submenu y se aloja en la opcion de menu*/
+    opacity: 0;
+    transition: opacity 5s;
+    border: 2px solid white;
+}
+/*ESTILO TEXTO-FONDO SUBMENU*/
+.submen li{
+   font-size: 12.5px;
+   border-bottom-color: 2px
+}
+.submen li a{
+    width: 159px;
+    margin: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color:#fff;
+    text-align: left;
+}
+.submen li a:hover{
+    color:black;
+    background-color: rgba(236, 240, 241, 0.651);
+    border-radius: 3px;
+}
+.men li:hover .submen{
+    visibility: visible;
+    opacity: 2;
+}
+/*========================================================*/
+main{
+    display: flex;
+}
+aside{
+    width: 50%;
+    padding-bottom: 40px;
+}
+aside h1{
+    padding-top: 20px ;
+    padding-left: 65px;
+    text-align: left;
+    color: #61BD0D;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: arial narrow;
+}
+aside h2{
+    padding-left: 65px;
+    text-align: left;
+    font-weight: lighter;
+    color: black;
+    font-size: 15px;
+    font-family: arial narrow;
+}
+/*ESTILO A FORMULARIO*/
+.formulario{
+    width: 60%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 85px;
+    border-radius: 10px;
+    border: 1px solid #C5D5DC;
+    background-color: white;
+    margin-left: 30px;
+}
+.caja{
+    width: 404px;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 3px 0;
+    color: rgb(27, 43, 48);
+    border: 1px solid rgb(174, 201, 207);
+    background-color:white;
+    font-family: arial;
+    font-size: 13px;
+}
+.h2{
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 13px;
+}
+.coment{
+    font-size: 11px;
+    font-family: Helvetica;
+}
+.textA{
+    color: rgb(27, 43, 48);
+    border: 1px solid rgb(174, 201, 207);
+    background-color: white;
+    font-family: arial;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 3px 0;
+}
+.boton{
+    background-color:#D9534F;
+    color:white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 3px;
+    margin: 14px,0px,0px,0px;
+    font-size: 13px;
+    font-family: arial;
+}
+.boton:hover{
+    color:rgb(255, 255, 0);
+    transition: all 2s;
+}
+section{
+    width: 50%;
+    margin: auto;
+}
+section iframe{
+    padding: 20px;
+}
+span{
+    display: block;
+    border: 1px solid gray;
+    background-color: #337AB7;
+    color: white;
+    border-radius: 3px;
+    font-size: 25px;
+    font-family: "Roboto",sans-serif;
+    margin-left: 48px;
+    margin-right: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    
+}
+footer{
+    display: flex;
+    margin-top: 5px; 
+    background-color: rgb(45, 53, 68);
+}
+.footer1{
+    padding-top:30px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+.footer1 h1{
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #61BD0D;
+}
+.footer1 h2{
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+.footer1 h3{
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+.footer1 img{
+    float: left;
+    padding-right: 10px;
+    width: 30px;
+}
+.footer1 p{
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: arial narrow;
+    color: white;
+}
+.footer1 p a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial narrow;
+    color: white;
+}
+.footer1 p a:hover{
+    color: rgb(221, 221, 32);
+    transition: all 2s;
+}
+.footer2{
+    padding-top: 30px;
+    padding-left: 250px;
+    padding-bottom: 10px;
+}
+.footer2 h2{
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #61BD0D;
+    font-weight: bold;
+    font-style: italic;
+}
+.footer2 ul{
+    padding-left: 13px;
+    color: white;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.footer2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer2 ul li a:hover{
+    color: rgb(221, 221, 32);
+    transition: all 2s;
+}
+
+.footer2 h5{
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer3{
+    padding-top: 30px;
+    padding-left: 250px;
+    padding-bottom: 10px;
+}
+.footer3 h2{
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #61BD0D;
+    font-weight: bold;
+    font-style: italic;
+}
+.footer3 h3{
+    color: white;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer3 img{
+    display: flex;
+    width: 180px;
+    margin-top: 20px;
+}
