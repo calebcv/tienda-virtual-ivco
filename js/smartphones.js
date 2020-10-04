@@ -1,4 +1,5 @@
 "use strict";
+
 var productos;
 var isVisible = false;
 var getProductos = function (limit) {
