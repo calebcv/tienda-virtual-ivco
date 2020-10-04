@@ -1,0 +1,34 @@
+.img-card
+{
+    min-height: 60%!important;
+}
+.card
+{
+    height: 100%!important;
+}
+.spinner
+{
+    height: 200px;
+}
+.spinner p
+{
+    font-size: 40px;
+    animation: 1s girar infinite;
+}
+@keyframes girar
+{
+    to
+    {
+        transform: rotate(0deg);
+    }
+    from
+    {
+        transform: rotate(360deg);
+    }
+}
+.precio
+{
+    color: #61BD0D;
+    font-weight: bold;
+    font-size: 18px;
+}
