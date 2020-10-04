@@ -25,7 +25,7 @@ templates['productos'] = template({"1":function(container,depth0,helpers,partial
     + alias4(((helper = (helper = lookupProperty(helpers,"nombre_prod") || (depth0 != null ? lookupProperty(depth0,"nombre_prod") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"nombre_prod","hash":{},"data":data,"loc":{"start":{"line":12,"column":55},"end":{"line":12,"column":70}}}) : helper)))
     + "</h5>\r\n                    \r\n                    <p class=\"text-center precio\">S/."
     + alias4(((helper = (helper = lookupProperty(helpers,"precio") || (depth0 != null ? lookupProperty(depth0,"precio") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"precio","hash":{},"data":data,"loc":{"start":{"line":14,"column":53},"end":{"line":14,"column":63}}}) : helper)))
-    + "</p>\r\n                    <div class=\"row justify-content-center\">\r\n                    <button class=\"btn btn-primary\">Agregar al carrito</button>\r\n                    </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n";
+    + "</p>\r\n                    <div class=\"row justify-content-center\">\r\n                    <button class=\"btn_append btn btn-primary\">Agregar al carrito</button>\r\n                    </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {

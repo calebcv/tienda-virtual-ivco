@@ -25,10 +25,17 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
   <script src="./productos.precompiled.js"></script>
   <script src="../js/smartphones.js"></script>
+  <script src="../js/productos.js"></script>
   <script>
     var prod = Handlebars.templates.productos;
     getProductos(20)
-    .then(function (res) {isVisible=true;document.getElementById('productos').innerHTML = prod({productos: res,isVisible})  }); 
+    .then(function (res) 
+          {
+            productos=res;
+            isVisible=true;
+            document.getElementById('productos').innerHTML = prod({productos: res,isVisible});
+            addEventBtn()
+          }); 
   </script>
 
   <div id="footer"></div>

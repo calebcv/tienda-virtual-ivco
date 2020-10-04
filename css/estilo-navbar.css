@@ -3,6 +3,14 @@
     font-family: arial narrow;
     
 }
+#nav
+{
+    z-index: 1000;
+}
+nav
+{
+    z-index: 1000;
+}
 .sliderheader{
     margin: 0px;
     padding: 0px;
@@ -102,7 +110,28 @@ a
     opacity: 1;
     
 }
-
+.cont_art_car
+{
+    width: 500%;
+    height: auto;
+    top: 100%;
+    display: none;
+    
+}
+.sub_cont_art_car
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    background-color: white;
+    padding: 4%;
+}
+#carrito:checked ~ label .cont_art_car
+{
+    
+    display: block;
+}
 @keyframes cambio{
     0%{margin-left: 0;}
     10%{margin-left: 0;}
