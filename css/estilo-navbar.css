@@ -132,6 +132,20 @@ a
     
     display: block;
 }
+.cont_search_res
+{
+    top:100%;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    border-top: rgb(117, 115, 115) 1px solid;
+}
+.res_search
+{
+    border-bottom:rgb(117, 115, 115) 1px solid;
+    border-left: rgb(117, 115, 115) 1px solid;
+    border-right: rgb(117, 115, 115) 1px solid;
+}
 @keyframes cambio{
     0%{margin-left: 0;}
     10%{margin-left: 0;}
