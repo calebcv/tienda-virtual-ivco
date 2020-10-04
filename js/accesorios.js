@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var productos;
 var isVisible = false;
 var getProductos = function (limit) {
