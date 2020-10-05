@@ -112,11 +112,13 @@ a
 }
 .cont_art_car
 {
-    width: 500%;
+    width: 700%;
     height: auto;
     top: 100%;
+    right: 0!important;
     display: none;
-    
+    z-index: 100;
+    background-color: white;
 }
 .sub_cont_art_car
 {
@@ -126,10 +128,17 @@ a
     z-index: 100;
     background-color: white;
     padding: 4%;
+    overflow: auto;
+    max-height: 40vw;
+    
+}
+.circle-btn
+{
+    width: 30px!important;
+    height: 30px!important;
 }
 #carrito:checked ~ label .cont_art_car
 {
-    
     display: block;
 }
 .cont_search_res

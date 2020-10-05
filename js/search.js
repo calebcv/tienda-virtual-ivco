@@ -25,8 +25,8 @@ var getSearch = function () {
         addResSearchDom([]);
 };
 var substrRes = function (text) {
-    if (text.length >= 12)
-        return text.substring(0, 17) + "...";
+    if (text.length >= 28)
+        return text.substring(0, 25) + "...";
     else
         return text;
 };

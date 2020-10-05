@@ -38,30 +38,69 @@ var appendProduct = function (e) {
     for (var x = 0; x < btn.length; x++) {
         _loop_1(x);
     }
+    console.log(carrito);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     appendArticlesDom();
 };
 var appendArticlesDom = function () {
     if (carrito.length > 0) {
+        var cont_art_car = document.getElementsByClassName("cont_art_car")[0];
+        cont_art_car.addEventListener("click", function (e) { e.preventDefault(); e.stopPropagation(); return false; });
         while (articulos === null || articulos === void 0 ? void 0 : articulos.firstChild) {
             articulos.removeChild(articulos.firstChild);
         }
         for (var _i = 0, carrito_1 = carrito; _i < carrito_1.length; _i++) {
             var value = carrito_1[_i];
+            var newDivContainer = document.createElement("div");
+            newDivContainer.className = "col-11 rounded border";
+            var newRow = document.createElement("div");
+            newRow.className = "row";
+            var newImgProd = document.createElement("img");
+            newImgProd.className = "col-3";
+            newImgProd.src = value.img;
             var newDivNameProd = document.createElement("div");
-            newDivNameProd.className = "col-10";
+            newDivNameProd.className = "col-6";
             newDivNameProd.innerHTML = substrText(value.nombre_prod);
+            var newDivDeleteProd = document.createElement("div");
+            newDivDeleteProd.className = "col-3 d-flex align-items-center";
+            var newBtnDeleteProd = document.createElement("btn");
+            newBtnDeleteProd.className = "btn btn-danger";
+            newBtnDeleteProd.innerHTML = "Eliminar";
+            var newContCantProd = document.createElement("div");
+            newContCantProd.className = "col-12";
+            var newRow2 = document.createElement("div");
+            newRow2.className = "row justify-content-center pt-2 pb-2";
+            var newBtnMenos = document.createElement("button");
+            newBtnMenos.className = "circle-btn btn btn-success p-0 m-0 rounded-circle";
+            newBtnMenos.innerHTML = "-";
             var newDivCantProd = document.createElement("div");
-            newDivCantProd.className = "col-2";
+            newDivCantProd.className = "col-2 text-center align-self-center";
             newDivCantProd.innerHTML = value.cantidad;
-            articulos === null || articulos === void 0 ? void 0 : articulos.appendChild(newDivNameProd);
-            articulos === null || articulos === void 0 ? void 0 : articulos.appendChild(newDivCantProd);
+            var newBtnMas = document.createElement("button");
+            newBtnMas.className = "circle-btn btn btn-success p-0 m-0 rounded-circle";
+            newBtnMas.innerHTML = "+";
+            articulos === null || articulos === void 0 ? void 0 : articulos.appendChild(newDivContainer);
+            newDivContainer.appendChild(newRow);
+            newRow.appendChild(newImgProd);
+            newRow.appendChild(newDivNameProd);
+            newRow.appendChild(newDivDeleteProd);
+            newDivDeleteProd.appendChild(newBtnDeleteProd);
+            newRow.appendChild(newContCantProd);
+            newContCantProd.appendChild(newRow2);
+            newRow2.appendChild(newBtnMenos);
+            newRow2.appendChild(newDivCantProd);
+            newRow2.appendChild(newBtnMas);
         }
-        var newBtnPagar = document.createElement("button");
-        newBtnPagar.className = "col-auto mt-2 btn btn-success";
-        newBtnPagar.setAttribute("type", "button");
-        newBtnPagar.innerHTML = "Pagar Ahora";
-        articulos === null || articulos === void 0 ? void 0 : articulos.appendChild(newBtnPagar);
+        if (document.getElementsByClassName("btn-pagar").length == 0) {
+            var newRow = document.createElement("div");
+            newRow.className = "row justify-content-center";
+            var newBtnPagar = document.createElement("button");
+            newBtnPagar.className = "col-auto btn-pagar mt-3 mb-3 btn btn-success";
+            newBtnPagar.setAttribute("type", "button");
+            newBtnPagar.innerHTML = "Pagar Ahora";
+            cont_art_car.appendChild(newRow);
+            newRow.appendChild(newBtnPagar);
+        }
     }
     else {
         while (articulos === null || articulos === void 0 ? void 0 : articulos.firstChild) {
