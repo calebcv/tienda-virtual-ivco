@@ -61,12 +61,9 @@
         <div class="container">
             <div class="input-container">
               <div class="fb-login-button" data-size="large" data-button-type="login_with" 
-              data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="true" data-width="">
+              data-layout="rounded" scope="public_profile,email"
+              onlogin="checkLoginState();" data-auto-logout-link="true" data-use-continue-as="true" data-width="">
               </div>
-              <fb:login-button 
-              scope="public_profile,email"
-              onlogin="checkLoginState();">
-              </fb:login-button>
             </div>
             <br>
             
