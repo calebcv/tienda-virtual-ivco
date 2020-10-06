@@ -4,118 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
     <title>Login</title>
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="../css/estilo-navbar.css">
+    <link rel="stylesheet" href="../css/estilo-footer.css">
     <link rel="stylesheet" href="../css/estilo-RegistroLogin.css">
-    <link rel="shortcut icon" href="../img/vector-icono-logotipo-mascota-robot-azul_8169-214.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
-<body>
-    <div id="contenedor">
-        <div class="logo-mensaje">
-            <div id="logo">
-            <a href="../index.html"><img src="../img/logo-removebg-preview.png"></a><br>
-            </div>
-            <div id="mensaje">
-            <img src="../img/primeromisalud.gif">
-            </div>
-            <div id="peru">
-              <img src="../img/fiestapatria2.gif">
-            </div>
-        </div>
-    <header>
-        <div class="sliderheader">
-            <center>
-              <ul>
-                <li><img src="../img/fondoBanner7.JPG" alt=""></li>
-                <li><img src="../img/banner2_index.jpg" alt=""></li>
-                <li><img src="../img/banner3_index.jpg" alt=""></li>
-              </ul>
-            </center>
-          </div>
-    </header>
-    <center>
-        <nav class="nav">
-          <ul class="men">
-            <li><a href="Catálogo.html" target="_top">CATÁLOGO</a>
-              <ul class="submen">
-                <li><a href="Smartphone.html" target="_parent">SMARTPHONE</a></li>
-                <li><a href="laptops.html" target="_parent">LAPTOPS</a></li>
-                <li><a href="computadoras.html" target="_parent">COMPUTADORAS</a></li>
-                <li><a href="impresoras.html" target="_parent">IMPRESORAS</a></li>
-                <li><a href="accesorios.html" target="_parent">ACCESSORIOS</a></li>
-                <li><a href="software&antivirus.html" target="_parent">SOFTWARE & ANTIVIRUS</a></li>
-              </ul>
-            </li>
-            <li><a href="Servicios.html">SERVICIOS</a></li>
-            <li><a href="FormasPago.html">FORMAS DE PAGO</a></li>
-            <li><a href="LaEmpresa.html">LA EMPRESA</a></li>
-            <li><a href="Contactenos.html">CONTÁCTENOS</a></li>
-            <li><a href="Login.html" title="Iniciar sesión o regístra"><i class="fa fa-user"></i> TU CUENTA</a></li>
-          </ul>
-        </nav>
-      </center>
+<body class="container-fluid">
+    
+    <div id="nav"></div>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+    <script src="./navbar.precompiled.js"></script>
+
     <main>
         <section>  
     <form class="Formulario">
         <h1>Iniciar Sesión</h1>
         <div class="container">
             <div class="row justify-content-center">
-              <div class="fb-login-button d-flex justify-content-center" data-size="large" data-button-type="login_with" 
+              <div class="fb-login-button btn-facebook" data-size="large" data-button-type="login_with" 
               data-layout="rounded" scope="public_profile,email"
               onlogin="checkLoginState();" data-auto-logout-link="true" data-use-continue-as="true" data-width="">
               </div>
             </div>
             <br>
-            
-            <div class="input-container">
-            <h2>No recuerdo mi contraseña</h2><br>
-            <input type="reset" value="CANCELAR" class="buttom1">
-            <input type="submit" value="INICIAR SESIÓN" class="buttom2"><br><br>
-            <p>¿Aún no tienes cuenta?</p><br>
-            <p><a class="link" href="RegistroLogin.html">CRÉATE UNA GRATIS</a></p>
-            </div>
         </div>
-        
     </form>
         </section>
     </main>
-    <footer>
-        <div class="footer1">
-          <h1>ONLINESHOPIVCO.COM.PE</h1>
-          <h2>Tienda Online:</h2>
-          <h3>ATENCIÓN 24 HORAS ONLINE .:</h3><br><br>
-          <img src="../img/logofacebook.png" alt="">
-          <p>Siguenos</p><br>
-          <img src="../img/logoWhatsapp.png" alt="">
-          <p><a href="https://api.whatsapp.com/send?phone=01953659803" target="_blank">953 659 803</a></p>
-        </div>
-        <div class="footer2">
-          <h2>Contenido:</h2>
-          <ul>
-            <li><a href="../index.html">Portada</a></li>
-            <li><a href="Servicios.html">Servicios</a></li>
-            <li><a href="FormasPago.html">Formas de Pago</a></li>
-            <li><a href="LaEmpresa.html">La Empresa</a></li>
-            <li><a href="Contactenos.html">Contáctenos</a></li>
-            <li><a href="Login.html">Ingresar / Registrarse</a></li>
-              <li><a href="mapaSitio.html">Mapa de Sitio</a></li>
-          </ul>
-          <br><br><br><br>
-          <span>Copyright 2020 por @ivco</span>
-        </div>
-        <div class="footer3">
-          <h2>Teléfono:</h2>
-          <h3>953 659 803</h3><br>
-          <h2>Correo electrónico:</h2>
-          <h3>ventas@onlineshopivco@gmail.com</h3>
-          <h3>soporte@onlineshopivco@gmail.com</h3>
-          <center>
-            <a title="Libro de Reclamaciones" href="libroReclamaciones.html"><img src="../img/libroReclamaciones.png"
-                alt="Libro de Reclamaciones" /></a>
-          </center>
-        </div>
-      </footer>
-    </div>
+
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+    <script src="./footer.precompiled.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/productos.js"></script>
+    <script>
+      addEventBtn();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c7fe073229.js" crossorigin="anonymous"></script>
 </body>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v8.0&appId=2897775743838475&autoLogAppEvents=1" nonce="CBYkWeNA"></script>

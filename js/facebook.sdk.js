@@ -14,7 +14,7 @@ window.fbAsyncInit = ()=>
                       {
                           console.log(response);
                           if(response.authResponse)
-                          getFBUserData();
+                          getFBUserData();  
                       });
 };
 
