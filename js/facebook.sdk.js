@@ -10,12 +10,7 @@ window.fbAsyncInit = ()=>
       
     FB.AppEvents.logPageView();
 
-    FB.getLoginStatus((response)=>
-                      {
-                          console.log(response);
-                          if(response.authResponse)
-                          getFBUserData();  
-                      });
+    checkLoginState();
 };
 
   (function(d, s, id){
