@@ -10,7 +10,6 @@ window.fbAsyncInit = ()=>
       
     FB.AppEvents.logPageView();
 
-    checkLoginState();
 };
 
   (function(d, s, id){
