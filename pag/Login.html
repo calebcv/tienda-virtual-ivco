@@ -60,15 +60,16 @@
         <h1>Iniciar Sesión</h1>
         <div class="container">
             <div class="input-container">
-                <i class="fas fa-envelope"></i><span> E-mail </span><br>
-                <input type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+              <div class="fb-login-button" data-size="large" data-button-type="login_with" 
+              data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="true" data-width="">
+              </div>
+              <fb:login-button 
+              scope="public_profile,email"
+              onlogin="checkLoginState();">
+              </fb:login-button>
             </div>
             <br>
-            <div class="input-container">
-                <i class="fas fa-lock"></i><span> Contraseña </span><br>
-                <input type="password" name="correo" id="correo" placeholder="Ingrese su Password" required> 
-            </div>
-            <br>
+            
             <div class="input-container">
             <h2>No recuerdo mi contraseña</h2><br>
             <input type="reset" value="CANCELAR" class="buttom1">
@@ -77,7 +78,7 @@
             <p><a class="link" href="RegistroLogin.html">CRÉATE UNA GRATIS</a></p>
             </div>
         </div>
-        <div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="true" data-width=""></div>
+        
     </form>
         </section>
     </main>
