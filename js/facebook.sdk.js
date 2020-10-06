@@ -42,6 +42,8 @@ function checkLoginState()
     FB.getLoginStatus((response)=> 
                       {
                         console.log(response);
+                          if(response.authResponse)
+                          getFBUserData();  
                       });
 }
 
