@@ -10,6 +10,7 @@ window.fbAsyncInit = function() {
     FB.AppEvents.logPageView();   
     FB.getLoginStatus((response)=>
 {
+    if(response.authResponse)
     FB.api(
         `/${response.authResponse.userID}/picture`,
         'GET',
