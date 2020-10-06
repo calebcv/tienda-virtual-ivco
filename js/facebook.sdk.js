@@ -10,7 +10,14 @@ window.fbAsyncInit = function() {
     FB.AppEvents.logPageView();   
     FB.getLoginStatus((response)=>
 {
-    console.log(response);
+    FB.api(
+        `/${response.authResponse.userID}/picture`,
+        'GET',
+        {},
+        function(response) {
+           console.log(response)
+        }
+      );
 });
   };
 
@@ -28,3 +35,5 @@ function checkLoginState() {
       console.log(response);
     });
   }
+
+  
