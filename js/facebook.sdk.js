@@ -1,5 +1,6 @@
 
-window.fbAsyncInit = function() {
+window.fbAsyncInit = ()=> 
+{
     FB.init({
       appId      : '2897775743838475',
       cookie     : true,
@@ -7,18 +8,15 @@ window.fbAsyncInit = function() {
       version    : 'v8.0'
     });
       
-    FB.AppEvents.logPageView();   
+    FB.AppEvents.logPageView();
+
     FB.getLoginStatus((response)=>
-{
-    if(response.authResponse)
-    FB.api(
-        `/me`,{locale:"es_MX",fields:'id,first_name,last_name,email,link,gender,locale,picture'},
-        function(response) {
-           console.log(response)
-        }
-      );
-});
-  };
+                      {
+                          console.log(response);
+                          if(response.authResponse)
+                          getFBUserData();
+                      });
+};
 
   (function(d, s, id){
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -29,10 +27,22 @@ window.fbAsyncInit = function() {
   }(document, 'script', 'facebook-jssdk'));
 
   
-function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      console.log(response);
-    });
-  }
+function getFBUserData()
+{
+  FB.api('/me',{locale:'es_ES',fields:"id,first_name,last_name,email,link,gender,locale,picture"},
+  (res)=>
+  {
+    console.log(res);
+  })
+}
+
+
+function checkLoginState() 
+{
+    FB.getLoginStatus((response)=> 
+                      {
+                        console.log(response);
+                      });
+}
 
   
