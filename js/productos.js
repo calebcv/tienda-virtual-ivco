@@ -168,7 +168,7 @@ var appendArticlesDom = function () {
         while (articulos === null || articulos === void 0 ? void 0 : articulos.firstChild) {
             articulos.removeChild(articulos.firstChild);
         }
-        while (contPTotalBtnPagar[0].firstChild) {
+        while (contPTotalBtnPagar[0]&&contPTotalBtnPagar[0].firstChild) {
             contPTotalBtnPagar[0].removeChild(contPTotalBtnPagar[0].firstChild);
         }
         var newPMsj = document.createElement("p");
