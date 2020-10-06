@@ -12,9 +12,7 @@ window.fbAsyncInit = function() {
 {
     if(response.authResponse)
     FB.api(
-        `/${response.authResponse.userID}/picture`,
-        'GET',
-        {},
+        `/me`,{locale:"es_MX",fields:'id,first_name,last_name,email,link,gender,locale,picture'},
         function(response) {
            console.log(response)
         }
