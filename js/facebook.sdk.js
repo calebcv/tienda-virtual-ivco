@@ -38,6 +38,7 @@ function getFBUserData()
   (res)=>
   {
     localStorage.setItem("userData",JSON.stringify(res));
+    console.log(res);
     verificarDataUser();
   })
 }
