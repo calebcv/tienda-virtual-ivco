@@ -83,6 +83,7 @@ var appendProduct = function (e) {
     appendArticlesDom();
 };
 var appendArticlesDom = function () {
+    var _a;
     if (carrito.length > 0) {
         var cont_art_car = document.getElementsByClassName("cont_art_car")[0];
         cont_art_car.addEventListener("click", function (e) { e.preventDefault(); e.stopPropagation(); return false; });
@@ -168,7 +169,7 @@ var appendArticlesDom = function () {
         while (articulos === null || articulos === void 0 ? void 0 : articulos.firstChild) {
             articulos.removeChild(articulos.firstChild);
         }
-        while (contPTotalBtnPagar[0].firstChild) {
+        while ((_a = contPTotalBtnPagar[0]) === null || _a === void 0 ? void 0 : _a.firstChild) {
             contPTotalBtnPagar[0].removeChild(contPTotalBtnPagar[0].firstChild);
         }
         var newPMsj = document.createElement("p");
