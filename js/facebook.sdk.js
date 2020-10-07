@@ -10,6 +10,10 @@ window.fbAsyncInit = ()=>
       
     FB.AppEvents.logPageView();
 
+    FB.Event.subscribe('auth.logout', function(response) {
+      alert("logged off");   
+  });
+  
     FB.getLoginStatus((response)=>
                       {
                           statusChangeCallback(response)
