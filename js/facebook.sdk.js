@@ -33,6 +33,17 @@ function getFBUserData()
     localStorage.setItem("userData",JSON.stringify(res));
     console.log(res);
     verificarDataUser();
+    const contBtnSocial=document.getElementsByClassName("cont_btnSocial")
+
+    while(contBtnSocial[0].firstChild)
+    contBtnSocial[0].removeChild(contBtnSocial[0].firstChild);
+
+    newBtnlogout=document.createElement("div");
+    newBtnlogout.className="fb-login-button"
+    newBtnlogout.addEventListener("click",logout);
+    newBtnlogout.innerHTML="Cerrar Sesion";
+
+    contBtnSocial[0].appendChild(newBtnlogout);
   })
 }
 
@@ -49,17 +60,7 @@ function statusChangeCallback(response) {
   console.log(response)             
   if (response.status === 'connected') {  
     getFBUserData();
-    const contBtnSocial=document.getElementsByClassName("cont_btnSocial")
-
-    while(contBtnSocial[0].firstChild)
-    contBtnSocial[0].removeChild(contBtnSocial[0].firstChild);
-
-    newBtnlogout=document.createElement("div");
-    newBtnlogout.className="fb-login-button"
-    newBtnlogout.addEventListener("click",logout);
-    newBtnlogout.innerHTML="Cerrar Sesion";
-
-    contBtnSocial[0].appendChild(newBtnlogout);
+    
   } 
 }
 
