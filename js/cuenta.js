@@ -2,16 +2,13 @@
 var dataUser;
 var contDataUser = document.getElementsByClassName("cont_dataUser");
 var verificarDataUser = function () {
+    while (contDataUser[0].firstChild)
+            contDataUser[0].removeChild(contDataUser[0].firstChild);
     if (localStorage.getItem("userData")) {
         console.log("si hay storage");
         dataUser = localStorage.getItem("userData");
         dataUser = JSON.parse(dataUser);
         insertDomDataUser();
-    }
-    else {
-        console.log("no hay storage");
-        while (contDataUser[0].firstChild)
-            contDataUser[0].removeChild(contDataUser[0].firstChild);
     }
 };
 var insertDomDataUser = function () {
