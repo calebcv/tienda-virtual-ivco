@@ -3,6 +3,8 @@ var dataUser;
 var contDataUser = document.getElementsByClassName("cont_dataUser");
 var titleForm = document.getElementsByClassName("title-form");
 var verificarDataUser = function () {
+    while (contDataUser[0].firstChild)
+            contDataUser[0].removeChild(contDataUser[0].firstChild);
     if (localStorage.getItem("userData")) {
         console.log("si hay storage");
         dataUser = localStorage.getItem("userData");
@@ -12,8 +14,6 @@ var verificarDataUser = function () {
     else {
         console.log("no hay storage");
         titleForm[0].innerHTML = "Iniciar Sesión";
-        while (contDataUser[0].firstChild)
-            contDataUser[0].removeChild(contDataUser[0].firstChild);
     }
 };
 var insertDomDataUser = function () {
