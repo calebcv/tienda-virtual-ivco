@@ -13,7 +13,7 @@ window.fbAsyncInit = ()=>
     FB.getLoginStatus((response)=>
                       {
                           statusChangeCallback(response);
-                          if(contBtnSocial);
+                          if(contBtnSocial[0]);
                           verificarDataUser()
                       });
 };
@@ -34,7 +34,7 @@ function getFBUserData()
   {
     localStorage.setItem("userData",JSON.stringify(res));
     
-    if(contBtnSocial)
+    if(contBtnSocial[0])
     {
       verificarDataUser();
       while(contBtnSocial[0].firstChild)
