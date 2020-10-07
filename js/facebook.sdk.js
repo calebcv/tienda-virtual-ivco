@@ -66,6 +66,7 @@ let logout=()=>
 {
   FB.logout(res=>
     {
+      console.log(res);
       localStorage.removeItem("userData");
       verificarDataUser();
     });
