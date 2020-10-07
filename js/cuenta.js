@@ -1,6 +1,6 @@
 "use strict";
 var dataUser;
-var contDataUser = document.getElementsByClassName("cont-dataUser");
+var contDataUser = document.getElementsByClassName("cont_dataUser");
 var verificarDataUser = function () {
     if (localStorage.getItem("dataUser")) {
         dataUser = localStorage.getItem("dataUser");
