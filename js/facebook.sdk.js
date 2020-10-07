@@ -72,7 +72,7 @@ let logout=()=>
       localStorage.removeItem("userData");
       verificarDataUser();
       const contBtnSocial=document.getElementsByClassName("cont_btnSocial");
-      contBtnSocial.innerHTML="<div class='fb-login-button btn-facebook' data-size='large' data-button-type='login_with' data-layout='rounded' scope='public_profile,email' onlogin='checkLoginState();' data-auto-logout-link='false' data-use-continue-as='true' data-width=''></div>"
+      contBtnSocial[0].innerHTML="<div class='fb-login-button btn-facebook' data-size='large' data-button-type='login_with' data-layout='rounded' scope='public_profile,email' onlogin='checkLoginState();' data-auto-logout-link='false' data-use-continue-as='true' data-width=''></div>"
     });
 }
 
