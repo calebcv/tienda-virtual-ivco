@@ -10,10 +10,6 @@ window.fbAsyncInit = ()=>
       
     FB.AppEvents.logPageView();
 
-    FB.Event.subscribe('auth.logout', function(response) {
-      alert("logged off");   
-  });
-  
     FB.getLoginStatus((response)=>
                       {
                           statusChangeCallback(response)
@@ -52,11 +48,25 @@ function checkLoginState()
 function statusChangeCallback(response) {     
   console.log(response)             
   if (response.status === 'connected') {  
-    getFBUserData();  
-  } else {                                 
-    localStorage.removeItem("userData");
-    verificarDataUser();
-  }
+    getFBUserData();
+    const contBtnSocial=document.getElementsByClassName("cont_btnSocial")
+
+    while(contBtnSocial[0].firstChild)
+    contBtnSocial[0].removeChild(contBtnSocial[0].firstChild);
+
+    newBtnlogout=document.createElement("div");
+    newBtnlogout.addEventListener("click",logout);
+    newBtnlogout.innerHTML="Cerrar Sesion";
+  } 
+}
+
+let logout=()=>
+{
+  FB.logout(res=>
+    {
+      localStorage.removeItem("userData");
+      verificarDataUser();
+    });
 }
 
 
