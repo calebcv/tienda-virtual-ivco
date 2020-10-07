@@ -6,16 +6,16 @@ if(localStorage.getItem("carrito"));
 {
     
     totalPagar=JSON.parse(localStorage.getItem("carrito"));
-    totalPagar.map(res=>console.log(parseInt(res.precio)));
+    totalPagar.map(res=>totalPagar=totalPagar+parseInt(res.precio));
     console.log(totalPagar)
     Culqi.settings({
     title: 'Culqi Store',
     currency: 'PEN',
     description: 'Productos',
-    amount: 3200
+    amount: totalPagar
     });
     Culqi.open();
-    e.preventDefault();
+    
 }
 
 $('#buyButton').on('click', function(e) {
