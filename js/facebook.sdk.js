@@ -1,4 +1,4 @@
-
+var contBtnSocial=document.getElementsByClassName("cont_btnSocial")
 window.fbAsyncInit = ()=> 
 {
     FB.init({
@@ -13,6 +13,7 @@ window.fbAsyncInit = ()=>
     FB.getLoginStatus((response)=>
                       {
                           statusChangeCallback(response);
+                          if(contBtnSocial);
                           verificarDataUser()
                       });
 };
@@ -32,19 +33,20 @@ function getFBUserData()
   (res)=>
   {
     localStorage.setItem("userData",JSON.stringify(res));
-    console.log(res);
-    verificarDataUser();
-    const contBtnSocial=document.getElementsByClassName("cont_btnSocial")
+    
+    if(contBtnSocial)
+    {
+      verificarDataUser();
+      while(contBtnSocial[0].firstChild)
+      contBtnSocial[0].removeChild(contBtnSocial[0].firstChild);
 
-    while(contBtnSocial[0].firstChild)
-    contBtnSocial[0].removeChild(contBtnSocial[0].firstChild);
+      newBtnlogout=document.createElement("div");
+      newBtnlogout.className="btn font-weight-bold btn-primary text-white col-auto p-2 rounded-pill"
+      newBtnlogout.addEventListener("click",logout);
+      newBtnlogout.innerHTML="Cerrar Sesion";
 
-    newBtnlogout=document.createElement("div");
-    newBtnlogout.className="btn font-weight-bold btn-primary text-white col-auto p-2 rounded-pill"
-    newBtnlogout.addEventListener("click",logout);
-    newBtnlogout.innerHTML="Cerrar Sesion";
-
-    contBtnSocial[0].appendChild(newBtnlogout);
+      contBtnSocial[0].appendChild(newBtnlogout);
+    }
   })
 }
 
