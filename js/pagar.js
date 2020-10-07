@@ -6,13 +6,13 @@ if(localStorage.getItem("carrito"));
 {
     
     totalPagar=JSON.parse(localStorage.getItem("carrito"));
-    totalPagar.map(res=>totalPagar+=parseInt(res.precio));
+    totalPagar.map(res=>console.log(parseInt(res.precio)));
     console.log(totalPagar)
     Culqi.settings({
     title: 'Culqi Store',
     currency: 'PEN',
     description: 'Productos',
-    amount: totalPagar
+    amount: 3200
     });
     Culqi.open();
     e.preventDefault();
