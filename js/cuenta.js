@@ -16,6 +16,19 @@ var verificarDataUser = function () {
 };
 var insertDomDataUser = function () {
     var newDivPictureUser = document.createElement("img");
+    newDivPictureUser.className = "img-fluid col-2";
     newDivPictureUser.src = dataUser.picture.data.url;
+    var newContData = document.createElement("div");
+    newContData.className = "col-8";
+    var newPName = document.createElement("p");
+    newPName.innerHTML = "Nombre: " + dataUser.first_name + " " + dataUser.last_name;
+    var newPEmail = document.createElement("p");
+    newPName.innerHTML = "Email: " + dataUser.email;
+    var newPID = document.createElement("p");
+    newPName.innerHTML = "ID: " + dataUser.id;
     contDataUser[0].appendChild(newDivPictureUser);
+    contDataUser[0].appendChild(newContData);
+    newContData.appendChild(newPName);
+    newContData.appendChild(newPEmail);
+    newContData.appendChild(newPID);
 };

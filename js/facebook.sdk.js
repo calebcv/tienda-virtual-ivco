@@ -14,7 +14,12 @@ window.fbAsyncInit = ()=>
                       {
                           console.log(response);
                           if(response.authResponse)
-                          getFBUserData();  
+                          getFBUserData(); 
+                          else
+                          {
+                            localStorage.removeItem("userData")
+                            verificarDataUser();
+                          }
                       });
 };
 
@@ -44,7 +49,12 @@ function checkLoginState()
                       {
                         console.log(response);
                           if(response.authResponse)
-                          getFBUserData();  
+                          getFBUserData(); 
+                          else
+                          {
+                            localStorage.removeItem("userData");
+                            verificarDataUser();
+                          }
                       });
 }
 
