@@ -26,9 +26,9 @@ var insertDomDataUser = function () {
     var newPName = document.createElement("p");
     newPName.innerHTML = "Nombre: " + dataUser.first_name + " " + dataUser.last_name;
     var newPEmail = document.createElement("p");
-    newPName.innerHTML = "Email: " + dataUser.email;
+    newPEmail.innerHTML = "Email: " + dataUser.email;
     var newPID = document.createElement("p");
-    newPName.innerHTML = "ID: " + dataUser.id;
+    newPID.innerHTML = "ID: " + dataUser.id;
     contDataUser[0].appendChild(newDivPictureUser);
     contDataUser[0].appendChild(newContData);
     newContData.appendChild(newPName);
