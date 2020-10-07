@@ -57,6 +57,8 @@ function statusChangeCallback(response) {
     newBtnlogout=document.createElement("div");
     newBtnlogout.addEventListener("click",logout);
     newBtnlogout.innerHTML="Cerrar Sesion";
+
+    contBtnSocial[0].appendChild(newBtnlogout);
   } 
 }
 
