@@ -32,7 +32,8 @@ function getFBUserData()
   FB.api('/me',{locale:'es_ES',fields:"id,first_name,last_name,email,link,gender,locale,picture"},
   (res)=>
   {
-    console.log(res);
+    localStorage.setItem("userData",JSON.stringify(res));
+    verificarDataUser();
   })
 }
 
