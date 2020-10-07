@@ -12,7 +12,8 @@ window.fbAsyncInit = ()=>
 
     FB.getLoginStatus((response)=>
                       {
-                          statusChangeCallback(response)
+                          statusChangeCallback(response);
+                          verificarDataUser()
                       });
 };
 
@@ -60,7 +61,6 @@ function statusChangeCallback(response) {
   console.log(response)             
   if (response.status === 'connected') {  
     getFBUserData();
-    
   } 
 }
 
