@@ -13,7 +13,7 @@ window.fbAsyncInit = ()=>
     FB.getLoginStatus((response)=>
                       {
                           statusChangeCallback(response);
-                          if(contBtnSocial[0]);
+                          if(contBtnSocial[0])
                           verificarDataUser()
                       });
 };
