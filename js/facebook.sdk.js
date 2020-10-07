@@ -39,7 +39,7 @@ function getFBUserData()
     contBtnSocial[0].removeChild(contBtnSocial[0].firstChild);
 
     newBtnlogout=document.createElement("div");
-    newBtnlogout.className="fb-login-button"
+    newBtnlogout.className="btn font-weight-bold btn-primary text-white col-auto p-2 rounded-pill"
     newBtnlogout.addEventListener("click",logout);
     newBtnlogout.innerHTML="Cerrar Sesion";
 
