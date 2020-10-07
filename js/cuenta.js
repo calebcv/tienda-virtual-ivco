@@ -9,7 +9,7 @@ var verificarDataUser = function () {
         insertDomDataUser();
     }
     else {
-        console.log("si hay storage");
+        console.log("no hay storage");
         while (contDataUser[0].firstChild)
             contDataUser[0].removeChild(contDataUser[0].firstChild);
     }
