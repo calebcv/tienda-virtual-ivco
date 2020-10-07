@@ -12,14 +12,7 @@ window.fbAsyncInit = ()=>
 
     FB.getLoginStatus((response)=>
                       {
-                          console.log(response);
-                          if(response.authResponse)
-                          getFBUserData(); 
-                          else
-                          {
-                            localStorage.removeItem("userData")
-                            verificarDataUser();
-                          }
+                          statusChangeCallback(response)
                       });
 };
 
@@ -48,15 +41,18 @@ function checkLoginState()
 {
     FB.getLoginStatus((response)=> 
                       {
-                        console.log(response);
-                          if(response.authResponse)
-                          getFBUserData(); 
-                          else
-                          {
-                            localStorage.removeItem("userData");
-                            verificarDataUser();
-                          }
+                        statusChangeCallback(response);
                       });
+}
+
+function statusChangeCallback(response) {     
+  console.log(response)             
+  if (response.status === 'connected') {  
+    getFBUserData();  
+  } else {                                 
+    localStorage.removeItem("userData");
+    verificarDataUser();
+  }
 }
 
 
