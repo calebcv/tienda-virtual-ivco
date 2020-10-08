@@ -55,6 +55,7 @@ function checkLoginState()
     FB.getLoginStatus((response)=> 
                       {
                         statusChangeCallback(response);
+                        location.reload();
                       });
 }
 
