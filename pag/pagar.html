@@ -15,9 +15,21 @@
     <script src="./navbar.precompiled.js"></script>
 
     <main>
-        <section>  
+        <section id="cont-prod">  
 
         </section>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
+        <script src="./storageProd.precompiled.js"></script>
+        <script>
+            var template = Handlebars.templates.storageProd;
+            let funcTemplate=()=>
+            {
+            var textBtnPagoTunqui=0;
+            localStorage.getItem("carrito")?JSON.parse(localStorage.getItem("carrito")).map(res=>textBtnPagoTunqui+=parseInt(res.precio)):0;
+            document.getElementById('cont-prod').innerHTML = template({carrito: localStorage.getItem("carrito")?JSON.parse(localStorage.getItem("carrito")):[],total:textBtnPagoTunqui,noArticle:textBtnPagoTunqui==0?true:false,visibleBtnPagar:textBtnPagoTunqui==0?false:true})
+            }
+            funcTemplate();
+        </script>
     </main>
 
     <div id="footer"></div>

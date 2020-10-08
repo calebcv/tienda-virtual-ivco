@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        
+        {{#each carrito}}
+        <div class="row mt-4">
+            <img class="col-2 img-fluid" src="{{img}}">
+
+            </img>
+            <div class="col-3">
+                <p>{{nombre_prod}}</p>
+                <p>S/.{{precio}}</p>
+                <div class="row">
+                    <button onclick="removeCantCarSection(this)" class="circle-btn btn-menos-section btn btn-success p-0 m-0 rounded-circle">-</button>
+                    <div class="col-2 text-center align-self-center">{{cantidad}}</div>
+                    <button onclick="addCantCarSection(this)" class="circle-btn btn-mas-section btn btn-success p-0 m-0 rounded-circle">+</button>
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center align-items-center">
+                <button onclick="removeProdMain(this)" class="btn btn-danger btn-remove-item">Eliminar</button>
+            </div>
+        </div>
+        {{/each}}
+        {{#if noArticle}}
+        <p class="text-center mt-3 mb-3">No Hay Articulos en el carrito</p>
+        {{else}}
+        <div class="row justify-content-center">
+            <p id="textBtnPagoTunqui" class="text-center col-12">Total a pagar: S/.{{total}}</p>
+            <button id="btnOpenCunqui" class="btn btn-success">
+                Pagar Ahora
+            </button>
+        </div>
+        {{/if}}
+        
+    </div>
+</div>

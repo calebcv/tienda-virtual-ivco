@@ -46,7 +46,6 @@ var removeCantCar = function (e) {
     }
 };
 var removeProdCar = function (e) {
-    console.log("a");
     for (var x = 0; x < btnDelete.length; x++) {
         if (e.target == btnDelete[x]) {
             carrito.splice(x, 1);
@@ -123,6 +122,8 @@ var appendArticlesDom = function () {
             newBtnMenos.className = "circle-btn btn-menos btn btn-success p-0 m-0 rounded-circle";
             newBtnMenos.innerHTML = "-";
             newBtnMenos.addEventListener("click", removeCantCar);
+            newBtnMenos.addEventListener("click", addEventCircleBtn);
+
             var newDivCantProd = document.createElement("div");
             newDivCantProd.className = "col-2 text-center align-self-center";
             newDivCantProd.innerHTML = value.cantidad;
@@ -130,6 +131,8 @@ var appendArticlesDom = function () {
             newBtnMas.className = "circle-btn btn-mas btn btn-success p-0 m-0 rounded-circle";
             newBtnMas.innerHTML = "+";
             newBtnMas.addEventListener("click", addCantCar);
+            newBtnMas.addEventListener("click", addEventCircleBtn);
+            
             articulos === null || articulos === void 0 ? void 0 : articulos.appendChild(newDivContainer);
             newDivContainer.appendChild(newRow);
             newRow.appendChild(newImgProd);
@@ -191,3 +194,9 @@ var addEventBtn = function () {
         btn[x].addEventListener("click", appendProduct, false);
     }
 };
+
+let addEventCircleBtn=()=>
+{
+    if(document.getElementById("cont-prod"))
+    funcTemplate();
+}

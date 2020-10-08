@@ -3,6 +3,9 @@
     font-family: arial narrow;
     
 }
+body
+{
+}
 #nav
 {
     z-index: 1000;
