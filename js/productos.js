@@ -154,7 +154,6 @@ var appendArticlesDom = function () {
             var newBtnPagar = document.createElement("a");
             newBtnPagar.setAttribute("href", "../pag/pagar.html");
             newBtnPagar.className = "col-auto btn-pagar mt-3 mb-3 btn btn-success";
-            newBtnPagar.setAttribute("type", "button");
             newBtnPagar.innerHTML = "Pagar Ahora";
             cont_art_car.appendChild(newRow);
             newRow.appendChild(newPTotal);
