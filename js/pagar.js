@@ -12,7 +12,7 @@ if(localStorage.getItem("carrito"));
     title: 'Culqi Store',
     currency: 'PEN',
     description: 'Productos',
-    amount: totalPagar
+    amount: totalPagar*100
     });
     Culqi.open();
     
