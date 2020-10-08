@@ -1,12 +1,12 @@
 "use strict";
 Culqi.publicKey = 'sk_test_75a57d6472997a85';
-var totalPagar=0;
+
 
 if(localStorage.getItem("carrito"));
 {
-    
-    totalPagar=JSON.parse(localStorage.getItem("carrito"));
-    totalPagar.map(res=>totalPagar=totalPagar+parseInt(res.precio));
+    let totalPagar=0;
+    const carrito=JSON.parse(localStorage.getItem("carrito"));
+    carrito.map(res=>totalPagar=totalPagar+parseInt(res.precio));
     console.log(totalPagar)
     Culqi.settings({
     title: 'Culqi Store',
