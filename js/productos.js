@@ -152,7 +152,6 @@ var appendArticlesDom = function () {
             var newPTotal = document.createElement("p");
             newPTotal.className = "total-pagar-info col-12 text-center m-0";
             var newBtnPagar = document.createElement("li");
-            newBtnPagar.className = "col-auto btn-pagar mt-3 mb-3 btn btn-success";
             var newa = document.createElement("a");
             newa.href = "../pag/pagar.html";
             newa.innerHTML = "Pagar Ahora";
