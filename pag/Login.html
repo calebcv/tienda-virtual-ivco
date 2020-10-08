@@ -14,7 +14,10 @@
     <div id="nav"></div>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.runtime.js"></script>
     <script src="./navbar.precompiled.js"></script>
-
+    <script>
+      var nav = Handlebars.templates.navbar;
+      document.getElementById('nav').innerHTML = nav({foto:localStorage.getItem("userData")?JSON.parse(localStorage.getItem("userData")).picture.data.url:null})
+    </script>
     <main>
         <section>  
     <form class="Formulario">
