@@ -33,7 +33,7 @@ function getFBUserData()
   (res)=>
   {
     localStorage.setItem("userData",JSON.stringify(res));
-    
+    console.log(res);
     if(contBtnSocial[0])
     {
       verificarDataUser();
@@ -44,7 +44,6 @@ function getFBUserData()
       newBtnlogout.className="btn font-weight-bold btn-primary text-white col-auto p-2 rounded-pill"
       newBtnlogout.addEventListener("click",logout);
       newBtnlogout.innerHTML="Cerrar Sesion";
-
       contBtnSocial[0].appendChild(newBtnlogout);
     }
   })
