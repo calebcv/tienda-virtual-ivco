@@ -151,14 +151,14 @@ var appendArticlesDom = function () {
             newRow.className = "row cont-Ptotal-btnPagar justify-content-center";
             var newPTotal = document.createElement("p");
             newPTotal.className = "total-pagar-info col-12 text-center m-0";
-            var newBtnPagar = document.createElement("li");
-            var newa = document.createElement("a");
-            newa.href = "../pag/pagar.html";
-            newa.innerHTML = "Pagar Ahora";
+            var newBtnPagar = document.createElement("button");
+            newBtnPagar.className = "col-auto btn-pagar mt-3 mb-3 btn btn-success";
+            newBtnPagar.setAttribute("type", "button");
+            newBtnPagar.innerHTML = "Pagar Ahora";
+            newBtnPagar.addEventListener("click", function () { window.location.href = "../pag/pagar.html"; });
             cont_art_car.appendChild(newRow);
             newRow.appendChild(newPTotal);
             newRow.appendChild(newBtnPagar);
-            newBtnPagar.appendChild(newa);
         }
         carrito.map(function (res) { return total_1 += parseInt(res.precio); });
         var totalPagar = document.getElementsByClassName("total-pagar-info");
