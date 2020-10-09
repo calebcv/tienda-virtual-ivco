@@ -23,8 +23,8 @@ nav
     background-color: white;
     display: none!important;
 }
-.foto-nav :hover ~ .cont-cuenta-nav
-{
+.foto-nav 
+{width: 1000px!important;
     display: block!important;
 }
 .sliderheader  
