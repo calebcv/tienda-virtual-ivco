@@ -21,11 +21,11 @@ nav
     top: 110%;
     right: 0;
     background-color: white;
+    display: none;
 }
 .foto-nav:hover ~ .cont-cuenta-nav
 {
-    width: 1000%;
-
+    display: block;
 }
 .sliderheader  
 {
