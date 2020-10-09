@@ -23,7 +23,7 @@ nav
     background-color: white;
     display: none!important;
 }
-.foto-nav:hover ~ .cont-cuenta-nav
+.foto-nav :hover ~ .cont-cuenta-nav
 {
     display: block!important;
 }
