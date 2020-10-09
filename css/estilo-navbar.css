@@ -23,11 +23,12 @@ nav
     background-color: white;
     display: none!important;
 }
-.foto-nav:hover ~ .cont-cuenta-nav
+.foto-nav :hover ~ .cont-cuenta-nav
 {
     display: block!important;
 }
-.sliderheader{
+.sliderheader  
+{
     margin: 0px;
     padding: 0px;
     background-image: url("../img/fondoBanner4.jpg");
