@@ -27,6 +27,10 @@ nav
 {
     display: block;
 }
+.cont-cuenta-nav:hover
+{
+    display: block;
+}
 .sliderheader  
 {
     margin: 0px;
