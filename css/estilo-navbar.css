@@ -23,7 +23,7 @@ nav
     background-color: white;
     display: none!important;
 }
-.foto-nav:hover .cont-cuenta-nav
+.foto-nav:hover ~ .cont-cuenta-nav
 {
     display: block;
 }
@@ -128,7 +128,7 @@ a
 }
 .cont_art_car
 {
-    width: 700%;
+    width: 1080%;
     height: auto;
     top: 100%;
     right: 0!important;
