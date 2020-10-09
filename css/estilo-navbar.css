@@ -25,7 +25,7 @@ nav
 }
 .foto-nav:hover ~ .cont-cuenta-nav
 {
-    display: block;
+    display: block!important;
 }
 .sliderheader{
     margin: 0px;
