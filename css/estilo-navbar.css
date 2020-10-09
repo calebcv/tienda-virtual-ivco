@@ -22,7 +22,7 @@ nav
     right: 0;
     background-color: white;
 }
-.cont-cuenta-nav:hover
+.foto-nav:hover ~ .cont-cuenta-nav
 {
     width: 1000%;
 
